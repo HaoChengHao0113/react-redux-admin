@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { Input } from 'antd';
 import './index.less';
-import logo from '@/img/logo.png'
+import logo from '@/img/githubLogo.png'
 
 const ALink = [
     { name: 'Pull Requests', path: '/login'},

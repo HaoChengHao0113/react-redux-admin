@@ -10,9 +10,8 @@ export default class Main extends Component {
     }
 
     componentDidMount() {
-        console.log('localStorage', localStorage)
+
         if(!localStorage.token) {
-            console.log('需要登陆')
             browserHistory .push('/login')
         }
     }
