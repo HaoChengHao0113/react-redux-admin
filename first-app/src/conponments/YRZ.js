@@ -1,17 +1,41 @@
 import React, { Component } from "react";
-import Common from '@/layout/layout.js';
+import { connect } from 'react-redux'
+import store from '@/Store';
+import { add, minus } from "../Actions";
 
-export default class Yrz extends Component{
+class Yrz extends Component{
     constructor(props) {
         super(props);
     }
 
+    add = (num) =>{
+        const action = add(num);
+        store.dispatch(action)
+    }
+    minus = (num) => {
+        const action = minus(num);
+        store.dispatch(action)
+    }
+
     render() {
-        let content = (<div>yrzyryzryzyryzr31232131231232132222222222222222222222222222</div>);
+        const { value } = this.props;
         return (
             <div>
-                这是yrz  yrz yrz
+                <button onClick={()=>{
+                    this.add(value)
+                }}>点我+1</button>
+                <button onClick={()=>{
+                    this.minus(value)
+                }}>点我-1</button>
+                <div>{value}</div>
             </div>
         )
     }
 }
+
+const mapStateToProps = (state, ownProps) =>{
+    return {
+        value: state.value
+    }
+}
+export default connect(mapStateToProps)(Yrz);

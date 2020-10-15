@@ -1,18 +1,23 @@
 import React, { Component } from "react";
-import Common from '@/layout/layout.js';
+import { connect } from 'react-redux';
 
-export default class Candan1 extends Component{
+class Candan1 extends Component{
     constructor(props) {
         super(props);
     }
 
     render() {
-
+        const { value } = this.props;
         return (
             <div>
-                这是Candan1
-                {/*<Common content={content}/>*/}
+                {value}
             </div>
         )
     }
 }
+const mapStateToProps = (state, ownProps) =>{
+    return {
+        value: state.value
+    }
+}
+export default connect(mapStateToProps)(Candan1)

@@ -79,6 +79,8 @@ class Index extends Component {
                             layout='vertical'
                             onFinish={this.onFinish}
                             formList={this.state.list}
+                            classStyle='submit-button'
+                            buttonName='立即登录'
                         />
                     </div>
                 </div>

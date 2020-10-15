@@ -66,8 +66,9 @@ class Index extends Component {
                         <Button
                             type="primary"
                             htmlType="submit"
+                            className={this.props.classStyle}
                         >
-                            搜索
+                            {this.props.buttonName}
                         </Button>
                     </Form.Item>
                 </Form>
