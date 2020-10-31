@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { connect } from 'react-redux'
-import store from '@/Store';
 import { add, minus } from "../Actions";
 
 class Yrz extends Component{
@@ -9,12 +8,20 @@ class Yrz extends Component{
     }
 
     add = (num) =>{
-        const action = add(num);
-        store.dispatch(action)
+        // const action = add(num);
+        // this.props.dispatch(action)
+        this.props.dispatch({
+            type:'add',
+            num: 1
+        })
     }
     minus = (num) => {
-        const action = minus(num);
-        store.dispatch(action)
+        // const action = minus(num);
+        // this.props.dispatch(action)
+        this.props.dispatch({
+            type:'minus',
+            num: 1
+        })
     }
 
     render() {
@@ -22,10 +29,10 @@ class Yrz extends Component{
         return (
             <div>
                 <button onClick={()=>{
-                    this.add(value)
+                    this.add()
                 }}>点我+1</button>
                 <button onClick={()=>{
-                    this.minus(value)
+                    this.minus()
                 }}>点我-1</button>
                 <div>{value}</div>
             </div>
