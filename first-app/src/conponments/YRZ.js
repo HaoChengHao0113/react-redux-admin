@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { connect } from 'react-redux'
+import Jump from './jump'
 import { add, minus } from "../Actions";
 
 class Yrz extends Component{
@@ -24,6 +25,11 @@ class Yrz extends Component{
         })
     }
 
+    childClick = () => {
+        console.log('e', this);
+        this.childFangFa.childMethod()
+    }
+
     render() {
         const { value } = this.props;
         return (
@@ -35,6 +41,8 @@ class Yrz extends Component{
                     this.minus()
                 }}>点我-1</button>
                 <div>{value}</div>
+                <Jump childMethod={(ref)=>{ this.childFangFa = ref}}></Jump>
+                <div onClick={this.childClick}>调用子组件的函数</div>
             </div>
         )
     }
