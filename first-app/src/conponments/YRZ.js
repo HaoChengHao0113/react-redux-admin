@@ -1,11 +1,17 @@
 import React, { Component } from "react";
 import { connect } from 'react-redux'
 import Jump from './jump'
+import { getList } from '../api';
 import { add, minus } from "../Actions";
 
 class Yrz extends Component{
     constructor(props) {
         super(props);
+    }
+
+    componentDidMount() {
+      const data = getList;
+        console.log('data', data)
     }
 
     add = (num) =>{
