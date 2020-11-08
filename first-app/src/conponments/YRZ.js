@@ -1,18 +1,26 @@
 import React, { Component } from "react";
-import { connect } from 'react-redux'
+import { connect } from 'react-redux';
+import { Table, Pagination } from 'antd';
 import Jump from './jump'
-import { getList } from '../api';
 import { add, minus } from "../Actions";
 
 class Yrz extends Component{
     constructor(props) {
         super(props);
+        this.state={
+            currentPage: 1
+        }
     }
 
     componentDidMount() {
-      const data = getList;
-        console.log('data', data)
+        this.props.dispatch({
+            type: 'getList'
+        })
     }
+
+    // handleTableChange = (page) =>{
+    //     console.log(page)
+    // }
 
     add = (num) =>{
         // const action = add(num);
@@ -37,7 +45,39 @@ class Yrz extends Component{
     }
 
     render() {
-        const { value } = this.props;
+        const { value, list } = this.props;
+        console.log('length', list? list.length:0)
+        const paginationProps = {
+            page: this.state.currentPage,
+            // onChange : (page) => this.handleTableChange(page),
+            pageSize: 5,
+            showSizeChanger: false,
+            total: list? list.length:0
+        }
+        const columns = [
+            {
+                title: '姓名',
+                dataIndex: 'name',
+                key: 'name',
+            },
+            {
+                title: '年龄',
+                dataIndex: 'age',
+                key: 'age',
+            },
+            {
+                title: '性别',
+                dataIndex: 'sex',
+                key: 'sex',
+                render: (res)=>{
+                    if(res==='男'){
+                        return '男'
+                    }else{
+                        return '女'
+                    }
+                }
+            },
+        ];
         return (
             <div>
                 <button onClick={()=>{
@@ -49,6 +89,8 @@ class Yrz extends Component{
                 <div>{value}</div>
                 <Jump childMethod={(ref)=>{ this.childFangFa = ref}}></Jump>
                 <div onClick={this.childClick}>调用子组件的函数</div>
+
+                <Table dataSource={list} columns={columns} pagination={paginationProps}/>
             </div>
         )
     }
@@ -56,7 +98,8 @@ class Yrz extends Component{
 
 const mapStateToProps = (state, ownProps) =>{
     return {
-        value: state.value
+        value: state.value,
+        list: state.list
     }
 }
 export default connect(mapStateToProps)(Yrz);

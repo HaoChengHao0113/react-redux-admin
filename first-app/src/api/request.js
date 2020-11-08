@@ -27,6 +27,6 @@ export const request = (url, method = 'GET', data) =>{
              }
          })
          .then((res1)=>{
-             console.log('res1', res1)
+             return Promise.resolve(res1)
          })
 }
