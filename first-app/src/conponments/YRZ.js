@@ -16,11 +16,14 @@ class Yrz extends Component{
         this.props.dispatch({
             type: 'getList'
         })
+        // fetch('/apc/api/v1/lists/', {
+        //     method: "GET",
+        //     headers: {
+        //         'content-type': 'application/json'
+        //     },
+        // }).then(res=>{return res.json()})
+        //     .then(res1 =>console.log('res1', res1))
     }
-
-    // handleTableChange = (page) =>{
-    //     console.log(page)
-    // }
 
     add = (num) =>{
         // const action = add(num);

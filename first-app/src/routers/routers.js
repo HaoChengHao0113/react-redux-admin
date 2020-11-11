@@ -7,6 +7,7 @@ import Yrz from '@/conponments/YRZ.js';
 import Candan1 from "../conponments/candan1";
 import Login from '@/conponments/Login';
 import Jump from '@/conponments/jump';
+import Test from '@/conponments/test';
 
 const RouteConfig = (
     <Provider store={store}>
@@ -15,6 +16,7 @@ const RouteConfig = (
             <Route path="/" component={ Layout }>
                 <Route path="/yrz" component={ Yrz }></Route>
                 <Route path="/candan1" component={ Candan1 }></Route>
+                <Route path="/test" exact component={ Test }></Route>
             </Route>
             <Route path="/jump" component={ Jump }></Route>
         </Router>

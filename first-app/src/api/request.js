@@ -1,5 +1,7 @@
 export const request = (url, method = 'GET', data) =>{
-    const baseUrl = 'https://5b5e71c98e9f160014b88cc9.mockapi.io/';
+    // const baseUrl = 'https://5b5e71c98e9f160014b88cc9.mockapi.io';
+    // const baseUrl = 'http://tingapi.ting.baidu.com';
+    // const baseUrl = '/apc'
     let config = {
         method: method,
         headers: {
@@ -20,7 +22,7 @@ export const request = (url, method = 'GET', data) =>{
             }
         }
     }
-     return fetch(baseUrl+url, config)
+     return fetch(url, config)
          .then((res)=>{
              if(res.status === 200) {
                  return res.json()
