@@ -25,7 +25,7 @@ function *getMusicListData({ payload }){
     const list = yield select(state=>state.musicList||[]);
     listData.data.key = listData.data.url;
     list.push(listData.data)
-    yield put({type: 'musicList', musicList: [...list]})
+    yield put({type: 'musicList', musicList: list})
 }
 
 function *sagas(){
