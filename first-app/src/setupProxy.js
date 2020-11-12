@@ -11,7 +11,7 @@ module.exports = function(app) {
     },
 }));
     app.use(proxy('/musicapc', {
-        target: 'http://tingapi.ting.baidu.com' ,
+        target: 'https://api.uomg.com/' ,
         secure: false,
         changeOrigin: true,
         pathRewrite: {

@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { getMusicList } from '../api';
+import { connect } from 'react-redux'
 
 class Test extends Component {
     constructor(props) {
@@ -9,6 +9,7 @@ class Test extends Component {
         }
     }
     componentDidMount() {
+
         // function fun(){
         //     this.a = 0;
         //     this.b = function(){
@@ -35,7 +36,7 @@ class Test extends Component {
         // my_fun2.__proto__.c();	//this=>my_fun2.__proto__ 当前实例通过原型链在类的共有属性上增加了一个a:30
         // console.log(my_fun2.a);// 0
         // console.log(my_fun2.__proto__.a);
-        getMusicList({
+        this.props.getMusicList({
             method:'baidu.ting.billboard.billList',
             type:1,
             size:10,
@@ -52,4 +53,16 @@ class Test extends Component {
     }
 }
 
-export default Test;
+const mapStateToProps = state =>{
+    return {
+        musicList: state.musicList
+    }
+}
+const mapDispatchToProps = (dispatch) =>{
+    return {
+        getMusicList(payload){
+            dispatch({type: 'getMusicList', payload})
+        }
+    }
+}
+export default connect(mapStateToProps,mapDispatchToProps)(Test);

@@ -28,7 +28,7 @@ export default class Main extends Component {
                         <LeftMenu></LeftMenu>
                     </Layout.Sider>
                     <Layout.Content>
-                        { this.props.children }
+                            { this.props.children }
                     </Layout.Content>
                 </Layout>
             </Layout>

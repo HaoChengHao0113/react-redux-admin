@@ -844,7 +844,7 @@
       },
       {
         "id": 55,
-        "categoryName": "统计报表管理",
+        "categoryName": "音乐播放管理",
         "parentId": 0,
         "categoryCode": "kanban",
         "categoryType": null,
@@ -853,12 +853,12 @@
         "children": [
           {
             "id": 149,
-            "categoryName": "业务运行统计报表",
+            "categoryName": "音乐播放器",
             "parentId": 55,
             "categoryCode": "businessCount",
             "categoryType": null,
             "microService": null,
-            "path": "test",
+            "path": "music",
             "icon": null,
             "children": null
           }

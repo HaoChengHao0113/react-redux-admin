@@ -16,13 +16,6 @@ class Yrz extends Component{
         this.props.dispatch({
             type: 'getList'
         })
-        // fetch('/apc/api/v1/lists/', {
-        //     method: "GET",
-        //     headers: {
-        //         'content-type': 'application/json'
-        //     },
-        // }).then(res=>{return res.json()})
-        //     .then(res1 =>console.log('res1', res1))
     }
 
     add = (num) =>{
