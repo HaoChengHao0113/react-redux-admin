@@ -8,6 +8,8 @@ import Candan1 from "../conponments/candan1";
 import Login from '@/conponments/Login';
 import Jump from '@/conponments/jump';
 import Music from '@/conponments/Music';
+import UseStateAnduseEffect from '@/conponments/ReactHooks/useStateAnduseEffect';
+import DataType from '@/conponments/JudgeType';
 
 const RouteConfig = (
     <Provider store={store}>
@@ -17,6 +19,8 @@ const RouteConfig = (
                 <Route path="/yrz" component={ Yrz }></Route>
                 <Route path="/candan1" component={ Candan1 }></Route>
                 <Route path="/music" exact component={ Music }></Route>
+                <Route path="/usestate" exact component={ UseStateAnduseEffect }></Route>
+                <Route path="/datatype" exact component={ DataType }></Route>
             </Route>
             <Route path="/jump" component={ Jump }></Route>
         </Router>
