@@ -1,5 +1,5 @@
 const initState= {
-    value: 0
+    value: 0,
 }
 const reducer = (state=initState,action) =>{
     switch (action.type){

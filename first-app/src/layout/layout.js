@@ -17,7 +17,6 @@ export default class Main extends Component {
     }
 
     render() {
-        console.log('children', this.props.children)
         return (
             <Layout>
                 <Layout.Header style={{ padding: 0, height:80 }}>

@@ -502,7 +502,7 @@
       },
       {
         "id": 137,
-        "categoryName": "智能运维监控",
+        "categoryName": "地图",
         "parentId": 0,
         "categoryCode": "ywjk",
         "categoryType": null,
@@ -510,262 +510,14 @@
         "icon": null,
         "children": [
           {
-            "id": 52,
-            "categoryName": "业务健康度",
-            "parentId": 137,
-            "categoryCode": "health",
+            "id": 1490,
+            "categoryName": "百度地图",
+            "parentId": 55,
+            "categoryCode": "businessCount",
             "categoryType": null,
             "microService": null,
-            "icon": "tfu-zhinengxunjian",
-            "children": null
-          },
-          {
-            "id": 110,
-            "categoryName": "基础资源监控",
-            "parentId": 137,
-            "categoryCode": "monitor",
-            "categoryType": null,
-            "microService": null,
-            "icon": "tfu-jichushebei",
-            "children": [
-              {
-                "id": 112,
-                "categoryName": "虚拟化",
-                "parentId": 110,
-                "categoryCode": "virtualization",
-                "categoryType": "H",
-                "microService": null,
-                "icon": "dot",
-                "children": [
-                  {
-                    "id": 118,
-                    "categoryName": "VMware",
-                    "parentId": 112,
-                    "categoryCode": "vmware",
-                    "categoryType": "H",
-                    "microService": "itom-collection-vmware",
-                    "icon": null,
-                    "children": null
-                  }
-                ]
-              },
-              {
-                "id": 113,
-                "categoryName": "数据库",
-                "parentId": 110,
-                "categoryCode": "database",
-                "categoryType": "S",
-                "microService": null,
-                "icon": "dot",
-                "children": [
-                  {
-                    "id": 119,
-                    "categoryName": "Mysql",
-                    "parentId": 113,
-                    "categoryCode": "mysql",
-                    "categoryType": "S",
-                    "microService": "itom-collection-mysql",
-                    "icon": null,
-                    "children": null
-                  },
-                  {
-                    "id": 120,
-                    "categoryName": "Oracle",
-                    "parentId": 113,
-                    "categoryCode": "oracle",
-                    "categoryType": "S",
-                    "microService": "itom-collection-oracle",
-                    "icon": null,
-                    "children": null
-                  },
-                  {
-                    "id": 121,
-                    "categoryName": "Mongo",
-                    "parentId": 113,
-                    "categoryCode": "mongo",
-                    "categoryType": "S",
-                    "microService": "itom-collection-mongodb",
-                    "icon": null,
-                    "children": null
-                  }
-                ]
-              },
-              {
-                "id": 115,
-                "categoryName": "存储",
-                "parentId": 110,
-                "categoryCode": "storage",
-                "categoryType": "H",
-                "microService": null,
-                "icon": "dot",
-                "children": [
-                  {
-                    "id": 126,
-                    "categoryName": "博科",
-                    "parentId": 115,
-                    "categoryCode": "boke",
-                    "categoryType": "H",
-                    "microService": null,
-                    "icon": null,
-                    "children": null
-                  },
-                  {
-                    "id": 127,
-                    "categoryName": "EMC",
-                    "parentId": 115,
-                    "categoryCode": "emc",
-                    "categoryType": "H",
-                    "microService": null,
-                    "icon": null,
-                    "children": null
-                  }
-                ]
-              },
-              {
-                "id": 116,
-                "categoryName": "服务器",
-                "parentId": 110,
-                "categoryCode": "server",
-                "categoryType": "H",
-                "microService": null,
-                "icon": "dot",
-                "children": [
-                  {
-                    "id": 128,
-                    "categoryName": "Windows服务器",
-                    "parentId": 116,
-                    "categoryCode": "windows",
-                    "categoryType": "H",
-                    "microService": "itom-collection-windows",
-                    "icon": null,
-                    "children": null
-                  },
-                  {
-                    "id": 129,
-                    "categoryName": "Linux服务器",
-                    "parentId": 116,
-                    "categoryCode": "linux",
-                    "categoryType": "H",
-                    "microService": "itom-collection-ssh",
-                    "icon": null,
-                    "children": null
-                  },
-                  {
-                    "id": 130,
-                    "categoryName": "未知",
-                    "parentId": 116,
-                    "categoryCode": "unknow",
-                    "categoryType": "H",
-                    "microService": null,
-                    "icon": null,
-                    "children": null
-                  }
-                ]
-              },
-              {
-                "id": 117,
-                "categoryName": "中间件",
-                "parentId": 110,
-                "categoryCode": "middle",
-                "categoryType": "S",
-                "microService": null,
-                "icon": "dot",
-                "children": [
-                  {
-                    "id": 131,
-                    "categoryName": "消息中间件",
-                    "parentId": 117,
-                    "categoryCode": "messageMiddle",
-                    "categoryType": "S",
-                    "microService": null,
-                    "icon": "dot",
-                    "children": [
-                      {
-                        "id": 134,
-                        "categoryName": "RabbitMQ",
-                        "parentId": 131,
-                        "categoryCode": "rabbitMq",
-                        "categoryType": "S",
-                        "microService": "itom-collection-rabbitmq",
-                        "icon": null,
-                        "children": null
-                      }
-                    ]
-                  },
-                  {
-                    "id": 132,
-                    "categoryName": "缓存中间件",
-                    "parentId": 117,
-                    "categoryCode": "cacheMiddle",
-                    "categoryType": "S",
-                    "microService": null,
-                    "icon": "dot",
-                    "children": [
-                      {
-                        "id": 122,
-                        "categoryName": "redis",
-                        "parentId": 132,
-                        "categoryCode": "redis",
-                        "categoryType": "S",
-                        "microService": "itom-collection-redis",
-                        "icon": null,
-                        "children": null
-                      }
-                    ]
-                  },
-                  {
-                    "id": 133,
-                    "categoryName": "WEB中间件",
-                    "parentId": 117,
-                    "categoryCode": "webMiddle",
-                    "categoryType": "S",
-                    "microService": null,
-                    "icon": "dot",
-                    "children": [
-                      {
-                        "id": 123,
-                        "categoryName": "tomcat",
-                        "parentId": 133,
-                        "categoryCode": "tomcat",
-                        "categoryType": "S",
-                        "microService": "itom-collection-tomcat",
-                        "icon": null,
-                        "children": null
-                      },
-                      {
-                        "id": 124,
-                        "categoryName": "nginx",
-                        "parentId": 133,
-                        "categoryCode": "nginx",
-                        "categoryType": "S",
-                        "microService": "itom-collection-nginx",
-                        "icon": null,
-                        "children": null
-                      },
-                      {
-                        "id": 125,
-                        "categoryName": "WEB服务器",
-                        "parentId": 133,
-                        "categoryCode": "web",
-                        "categoryType": "S",
-                        "microService": null,
-                        "icon": null,
-                        "children": null
-                      }
-                    ]
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "id": 148,
-            "categoryName": "F5集群监控",
-            "parentId": 137,
-            "categoryCode": "f5monitor",
-            "categoryType": null,
-            "microService": null,
-            "icon": "tfu-F5jiqunjiankongzhongxin",
+            "path": "baidumap",
+            "icon": null,
             "children": null
           }
         ]
@@ -814,21 +566,56 @@
           },
           {
             "id": 141,
-            "categoryName": "运维知识库管理",
+            "categoryName": "useContext",
             "parentId": 54,
             "categoryCode": "ywzskgl",
             "categoryType": null,
             "microService": "",
+            "path": "usecontext",
             "icon": "tfu-yunweizhishiku",
             "children": null
           },
           {
             "id": 142,
-            "categoryName": "运维排班管理",
+            "categoryName": "useref",
             "parentId": 54,
             "categoryCode": "ywpbgl",
             "categoryType": null,
             "microService": "",
+            "path": "useref",
+            "icon": "tfu-yunweipaiban",
+            "children": null
+          },
+          {
+            "id": 122,
+            "categoryName": "useMemo",
+            "parentId": 54,
+            "categoryCode": "ywpbgl",
+            "categoryType": null,
+            "microService": "",
+            "path": "usememo",
+            "icon": "tfu-yunweipaiban",
+            "children": null
+          },
+          {
+            "id": 1225,
+            "categoryName": "useCallback",
+            "parentId": 54,
+            "categoryCode": "ywpbgl",
+            "categoryType": null,
+            "microService": "",
+            "path": "usecallback",
+            "icon": "tfu-yunweipaiban",
+            "children": null
+          },
+          {
+            "id": 12252,
+            "categoryName": "useImperativeHandle",
+            "parentId": 54,
+            "categoryCode": "ywpbgl",
+            "categoryType": null,
+            "microService": "",
+            "path": "useimperativeHandle",
             "icon": "tfu-yunweipaiban",
             "children": null
           }

@@ -10,6 +10,12 @@ import Jump from '@/conponments/jump';
 import Music from '@/conponments/Music';
 import UseStateAnduseEffect from '@/conponments/ReactHooks/useStateAnduseEffect';
 import DataType from '@/conponments/JudgeType';
+import UseContext from '@/conponments/ReactHooks/useContext';
+import UseRef from '@/conponments/ReactHooks/useRef';
+import UseMemo from '@/conponments/ReactHooks/useMemo';
+import UseCallback from '@/conponments/ReactHooks/useCallback';
+import UseImperativeHandle from '@/conponments/ReactHooks/useImperativeHandle';
+import BaiduMap from '@/conponments/BaiduMap';
 
 const RouteConfig = (
     <Provider store={store}>
@@ -21,6 +27,12 @@ const RouteConfig = (
                 <Route path="/music" exact component={ Music }></Route>
                 <Route path="/usestate" exact component={ UseStateAnduseEffect }></Route>
                 <Route path="/datatype" exact component={ DataType }></Route>
+                <Route path="/usecontext" exact component={ UseContext }></Route>
+                <Route path="/useref" exact component={ UseRef }></Route>
+                <Route path="/usememo" exact component={ UseMemo }></Route>
+                <Route path="/usecallback" exact component={ UseCallback }></Route>
+                <Route path="/useimperativeHandle" exact component={ UseImperativeHandle }></Route>
+                <Route path="/baidumap" exact component={ BaiduMap }></Route>
             </Route>
             <Route path="/jump" component={ Jump }></Route>
         </Router>
