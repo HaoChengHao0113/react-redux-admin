@@ -12,7 +12,7 @@
     "children": [
       {
         "id": 51,
-        "categoryName": "基础管理配置",
+        "categoryName": "webpack antd",
         "parentId": 0,
         "categoryCode": "cmdb",
         "categoryType": null,
@@ -21,7 +21,7 @@
         "children": [
           {
             "id": 56,
-            "categoryName": "设备管理",
+            "categoryName": "Antd-desgin",
             "parentId": 51,
             "categoryCode": "machineManager",
             "categoryType": null,
@@ -29,26 +29,15 @@
             "icon": "tfu-yunweiliuchenghua",
             "children": [
               {
-                "id": 1,
-                "categoryName": "虚拟化",
-                "parentId": 56,
-                "categoryCode": "virtualization",
+                "id": 9,
+                "categoryName": "Table",
+                "parentId": 1,
+                "categoryCode": "vmware",
                 "categoryType": "H",
-                "microService": null,
-                "icon": "dot",
-                "children": [
-                  {
-                    "id": 9,
-                    "categoryName": "VMware",
-                    "parentId": 1,
-                    "categoryCode": "vmware",
-                    "categoryType": "H",
-                    "path": "yrz",
-                    "microService": "itom-collection-vmware",
-                    "icon": null,
-                    "children": null
-                  }
-                ]
+                "path": "yrz",
+                "microService": "itom-collection-vmware",
+                "icon": null,
+                "children": null
               },
               {
                 "id": 2,
@@ -271,232 +260,13 @@
             ]
           },
           {
-            "id": 57,
-            "categoryName": "采集配置实例",
+            "id": 561,
+            "categoryName": "Webpack",
             "parentId": 51,
-            "categoryCode": "machineConfig",
+            "categoryCode": "machineManager",
             "categoryType": null,
             "microService": null,
-            "icon": "tfu-jichuxinxipeizhi",
-            "children": [
-              {
-                "id": 60,
-                "categoryName": "虚拟化",
-                "parentId": 57,
-                "categoryCode": "virtualization",
-                "categoryType": "H",
-                "microService": null,
-                "icon": "dot",
-                "children": [
-                  {
-                    "id": 66,
-                    "categoryName": "VMware",
-                    "parentId": 60,
-                    "categoryCode": "vmware",
-                    "categoryType": "H",
-                    "microService": "itom-collection-vmware",
-                    "icon": null,
-                    "children": null
-                  }
-                ]
-              },
-              {
-                "id": 61,
-                "categoryName": "数据库",
-                "parentId": 57,
-                "categoryCode": "database",
-                "categoryType": "S",
-                "microService": null,
-                "icon": "dot",
-                "children": [
-                  {
-                    "id": 67,
-                    "categoryName": "Mysql",
-                    "parentId": 61,
-                    "categoryCode": "mysql",
-                    "categoryType": "S",
-                    "microService": "itom-collection-mysql",
-                    "icon": null,
-                    "children": null
-                  },
-                  {
-                    "id": 68,
-                    "categoryName": "Oracle",
-                    "parentId": 61,
-                    "categoryCode": "oracle",
-                    "categoryType": "S",
-                    "microService": "itom-collection-oracle",
-                    "icon": null,
-                    "children": null
-                  },
-                  {
-                    "id": 69,
-                    "categoryName": "Mongo",
-                    "parentId": 61,
-                    "categoryCode": "mongo",
-                    "categoryType": "S",
-                    "microService": "itom-collection-mongodb",
-                    "icon": null,
-                    "children": null
-                  }
-                ]
-              },
-              {
-                "id": 64,
-                "categoryName": "服务器",
-                "parentId": 57,
-                "categoryCode": "server",
-                "categoryType": "H",
-                "microService": null,
-                "icon": "dot",
-                "children": [
-                  {
-                    "id": 76,
-                    "categoryName": "Windows服务器",
-                    "parentId": 64,
-                    "categoryCode": "windows",
-                    "categoryType": "H",
-                    "microService": "itom-collection-windows",
-                    "icon": null,
-                    "children": null
-                  },
-                  {
-                    "id": 77,
-                    "categoryName": "Linux服务器",
-                    "parentId": 64,
-                    "categoryCode": "linux",
-                    "categoryType": "H",
-                    "microService": "itom-collection-ssh",
-                    "icon": null,
-                    "children": null
-                  },
-                  {
-                    "id": 78,
-                    "categoryName": "未知",
-                    "parentId": 64,
-                    "categoryCode": "unknow",
-                    "categoryType": "H",
-                    "microService": null,
-                    "icon": null,
-                    "children": null
-                  }
-                ]
-              },
-              {
-                "id": 65,
-                "categoryName": "中间件",
-                "parentId": 57,
-                "categoryCode": "middle",
-                "categoryType": "S",
-                "microService": null,
-                "icon": "dot",
-                "children": [
-                  {
-                    "id": 79,
-                    "categoryName": "消息中间件",
-                    "parentId": 65,
-                    "categoryCode": "messageMiddle",
-                    "categoryType": "S",
-                    "microService": null,
-                    "icon": "dot",
-                    "children": [
-                      {
-                        "id": 82,
-                        "categoryName": "RabbitMQ",
-                        "parentId": 79,
-                        "categoryCode": "rabbitMq",
-                        "categoryType": "S",
-                        "microService": "itom-collection-rabbitmq",
-                        "icon": null,
-                        "children": null
-                      }
-                    ]
-                  },
-                  {
-                    "id": 80,
-                    "categoryName": "缓存中间件",
-                    "parentId": 65,
-                    "categoryCode": "cacheMiddle",
-                    "categoryType": "S",
-                    "microService": null,
-                    "icon": "dot",
-                    "children": [
-                      {
-                        "id": 70,
-                        "categoryName": "redis",
-                        "parentId": 80,
-                        "categoryCode": "redis",
-                        "categoryType": "S",
-                        "microService": "itom-collection-redis",
-                        "icon": null,
-                        "children": null
-                      }
-                    ]
-                  },
-                  {
-                    "id": 81,
-                    "categoryName": "WEB中间件",
-                    "parentId": 65,
-                    "categoryCode": "webMiddle",
-                    "categoryType": "S",
-                    "microService": null,
-                    "icon": "dot",
-                    "children": [
-                      {
-                        "id": 71,
-                        "categoryName": "tomcat",
-                        "parentId": 81,
-                        "categoryCode": "tomcat",
-                        "categoryType": "S",
-                        "microService": "itom-collection-tomcat",
-                        "icon": null,
-                        "children": null
-                      },
-                      {
-                        "id": 72,
-                        "categoryName": "nginx",
-                        "parentId": 81,
-                        "categoryCode": "nginx",
-                        "categoryType": "S",
-                        "microService": "itom-collection-nginx",
-                        "icon": null,
-                        "children": null
-                      },
-                      {
-                        "id": 73,
-                        "categoryName": "WEB服务器",
-                        "parentId": 81,
-                        "categoryCode": "web",
-                        "categoryType": "S",
-                        "microService": null,
-                        "icon": null,
-                        "children": null
-                      }
-                    ]
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "id": 58,
-            "categoryName": "告警配置管理",
-            "parentId": 51,
-            "categoryCode": "warnConfig",
-            "categoryType": null,
-            "microService": null,
-            "icon": "tfu-gaojingpeizhi",
-            "children": null
-          },
-          {
-            "id": 59,
-            "categoryName": "拓扑结构图管理",
-            "parentId": 51,
-            "categoryCode": "applicationTopo",
-            "categoryType": null,
-            "microService": null,
-            "icon": "tfu-yingyongtuopu",
-            "children": null
+            "icon": "tfu-yunweiliuchenghua"
           }
         ]
       },
